@@ -1,0 +1,14 @@
+syntax = 'proto3';
+
+package protobuf.data;
+import "protobuf/common/messageData.proto";
+
+
+message Msg {
+    bytes data = 1;
+    string app_name = 2;
+    string file_ext = 3;
+    int64 frame = 4;
+    protobuf.common.messageData _message_data = 5;
+    
+}
